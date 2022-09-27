@@ -55,5 +55,4 @@ if __name__ == "__main__":
         else:
             print("-"*20)
     end_time = time.time()
-    time = end_time - start_time
-    print(f"[経過時間：{time:.2f}秒]")
+    print(f"[経過時間：{(end_time - start_time):.2f}秒]")
