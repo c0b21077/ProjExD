@@ -22,9 +22,9 @@ def click_AC(event):
 
 root = tk.Tk()
 root.title("電卓")
-root.geometry("400x600")
+root.geometry("380x560")
 
-entry = tk.Entry(root, width=8, font=(", 40"), justify="right")
+entry = tk.Entry(root, width=10, font=(", 40"), justify="right")
 entry.grid(row=0, column=0, columnspan=5)
 
 r = 1
