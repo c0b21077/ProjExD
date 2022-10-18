@@ -65,6 +65,9 @@ if __name__ == "__main__":
     root = tk.Tk()
     tmr = 0
 
+    sx, sy = 150, 150
+    gx, gy = 1350, 750
+
     #練習1,2
     root.title("迷えるこうかとん")
     canv = tk.Canvas(root, width = 1500, height = 900, bg = "black")
@@ -77,8 +80,8 @@ if __name__ == "__main__":
     #スタート、ゴールの追加
     start = tk.PhotoImage(file = "fig/start.png")
     goal = tk.PhotoImage(file = "fig/goal.png")
-    canv.create_image(150,150, image = start)
-    canv.create_image(1350,750, image = goal)
+    canv.create_image(sx,sy, image = start)
+    canv.create_image(gx,gy, image = goal)
 
     #練習3
     tori = tk.PhotoImage(file = "fig/8.png")
