@@ -66,7 +66,7 @@ def main():
     vx, vy = +1, +1
     wx, wy = +1, +1
 
-    a = 0
+    fps = 0
 
     clock = pg.time.Clock()
     while True:
@@ -112,13 +112,13 @@ def main():
                 gameover()
                 return
         
-        if a > 10000:
+        if fps > 10000:
             yk, tt = check_bound2(bomb2_rct, scrn_rct)
             wx *= yk
             wy *= tt
             bomb2_rct.move_ip(wx, wy)
             scrn_sfc.blit(bomb2_sfc, bomb2_rct)
-        a += 2
+        fps += 2
         
         pg.display.update()
         clock.tick(1000)
