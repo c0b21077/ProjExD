@@ -131,6 +131,7 @@ def main():
         hone.update(scr)
         
         if kkt.rct.colliderect(bkd.rct): # こうかとんrctが爆弾rctと重なったら
+            scr.blit(txt, (700,400))
             return
         if kkt.rct.colliderect(hone.rct): # 骨が爆弾rctと重なったら
             return
